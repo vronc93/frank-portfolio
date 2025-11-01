@@ -1,2 +1,11 @@
-<h1>About Frank</h1>
-<p>Dit is een testpagina voor routing - stap 0.3 done.</p>
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const path = Astro.url.pathname;
+---
+
+<BaseLayout title="About – Frank" currentPath={path}>
+  <h1 class="text-3xl font-bold tracking-tight">Over mij</h1>
+  <p class="text-slate-600">
+    Ik werk als email developer bij Spotler NL en leer nu Astro & Tailwind.
+  </p>
+</BaseLayout>

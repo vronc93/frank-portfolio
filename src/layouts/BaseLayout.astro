@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css"; // Tailwind activeren
-const { title = "Frank – Portfolio" } = Astro.props;
+const { title = "Frank – Portfolio", currentPath = "/" } = Astro.props;
 ---
 
 <html lang="nl">
@@ -14,9 +14,15 @@ const { title = "Frank – Portfolio" } = Astro.props;
       <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
         <a href="/" class="font-semibold tracking-tight">Frank de Graaf</a>
         <nav class="flex gap-6">
-          <a href="/" class="hover:underline">Home</a>
-          <a href="/about" class="hover:underline">About</a>
-        </nav>
+            <a
+                href="/"
+                class={`hover:underline ${currentPath === "/" ? "underline underline-offset-8" : ""}`}
+            >Home</a>
+            <a
+                href="/about"
+                class={`hover:underline ${currentPath.startsWith("/about") ? "underline underline-offset-8" : ""}`}
+            >About</a>
+            </nav>
       </div>
     </header>
 

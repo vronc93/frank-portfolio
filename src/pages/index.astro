@@ -1,14 +1,8 @@
 ---
-// src/pages/index.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+const path = Astro.url.pathname;
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Frank de Graaf — Portfolio (dev)</title>
-  </head>
-  <body style="font-family: system-ui; margin: 3rem;">
-    <h1 style="font-size: 2.5rem;">Hoi, ik ben Frank 👋</h1>
-    <p>Welkom op mijn lokale Astro playground — stap 0.3 ✅</p>
-  </body>
-</html>
+<BaseLayout title="Home – Frank" currentPath={path}>
+  <h1 class="text-3xl font-bold tracking-tight">Hoi, ik ben Frank 👋</h1>
+  <p class="text-slate-600">Welkom op mijn lokale Astro playground — stap 0.3 ✅</p>
+</BaseLayout>
