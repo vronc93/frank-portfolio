@@ -1,8 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 const path = Astro.url.pathname;
 ---
-<BaseLayout title="Home – Frank" currentPath={path}>
-  <h1 class="text-3xl font-bold tracking-tight">Hoi, ik ben Frank 👋</h1>
-  <p class="text-slate-600">Welkom op mijn lokale Astro playground — stap 0.3 ✅</p>
+
+<BaseLayout title="Home – Frank">
+  <h1 class="text-3xl font-bold tracking-tight">Welkom 👋</h1>
+  <p class="mt-2 text-slate-600">Een greep uit projecten waaraan ik werk.</p>
+
+  <section class="mt-8 grid gap-6 sm:grid-cols-2">
+    <ProjectCard
+      title="Portfolio Website"
+      description="Astro + Tailwind basis; modulaire componenten en nette structuur."
+      href="/projects/portfolio"
+      imgSrc="https://picsum.photos/640/360?random=1"
+      tags={["Astro", "Tailwind", "UX thinking"]}
+    />
+    <ProjectCard
+      title="E-mail Playground"
+      description="Experimentele templates, micro-UX binnen e-mailclients."
+      href="/projects/emails"
+      imgSrc="https://picsum.photos/640/360?random=2"
+      tags={["Email dev", "Accessibility"]}
+    />
+  </section>
 </BaseLayout>

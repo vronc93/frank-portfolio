@@ -1,0 +1,10 @@
+# build & deps
+node_modules
+dist
+
+# logs & lockfiles
+*.log
+package-lock.json
+
+# misc (kan geen kwaad)
+.DS_Store
