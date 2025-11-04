@@ -1,5 +1,0 @@
-cd ~\Projects\frank-portfolio
-nvm use 22
-npm run dev
-
-(optioneel code . om VS Code te openen)
