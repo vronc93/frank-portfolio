@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css"; // Tailwind activeren
-const { title = "Frank – Portfolio", currentPath = "/" } = Astro.props;
+import '../styles/global.css' // Tailwind activeren
+const { title = 'Frank – Portfolio', currentPath = '/' } = Astro.props
 ---
 
 <html lang="nl">
@@ -16,12 +16,12 @@ const { title = "Frank – Portfolio", currentPath = "/" } = Astro.props;
         <nav class="flex gap-6">
           <a
             href="/"
-            class={`hover:underline ${currentPath === "/" ? "underline underline-offset-8" : ""}`}
+            class={`hover:underline ${currentPath === '/' ? 'underline underline-offset-8' : ''}`}
             >Home</a
           >
           <a
             href="/about"
-            class={`hover:underline ${currentPath.startsWith("/about") ? "underline underline-offset-8" : ""}`}
+            class={`hover:underline ${currentPath.startsWith('/about') ? 'underline underline-offset-8' : ''}`}
             >About</a
           >
         </nav>

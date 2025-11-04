@@ -8,16 +8,21 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "astro:check": "astro check",
+    "check": "npm run astro:check && npm run type-check && npm run format:check"
   },
   "dependencies": {
     "astro": "^5.15.3"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.5",
     "@tailwindcss/vite": "^4.1.16",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3"
   }
 }

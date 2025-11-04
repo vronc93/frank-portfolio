@@ -1,8 +1,8 @@
 {
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "astroAllowShorthand": true,
-  "semi": true,
-  "singleQuote": false,
+  "semi": false,
+  "singleQuote": true,
   "trailingComma": "es5",
   "printWidth": 100,
   "tabWidth": 2
