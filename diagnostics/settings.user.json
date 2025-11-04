@@ -1,0 +1,27 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.astro": "astro"
+  },
+
+  "html.autoClosingTags": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

@@ -1,0 +1,7 @@
+---
+const { title, description } = Astro.props;
+---
+<article class="rounded-xl border bg-white p-4 shadow-sm hover:shadow transition-shadow">
+  <h3 class="font-semibold">{title}</h3>
+  {description && <p class="mt-1 text-sm text-gray-600">{description}</p>}
+</article>
